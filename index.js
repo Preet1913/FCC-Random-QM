@@ -34,11 +34,16 @@ function App(){
             setRandomQuotes(quotes[randIndex])
             setColor(colors[randColorIndex])
     }
+    const styles = {
+        backgroundColor:colors,
+    }
+
+    
     
     return (
     <div style={{backgroundColor:colors, minHeight: "100vh"}}>
-        <div className="container pt-5">
-            <div className="jumbotron">
+        <div className="container pt-5" >
+            <div className="jumbotron" style={styles} >
                 <div className="card">
                     <div className="card-header">Inspirational Quotes</div>
                     <div className="card-body">
@@ -52,11 +57,11 @@ function App(){
                         )}
 
                         <div className="row">
-                            <button onClick={getNewQuote} className="btn btn-primary ml-3">New Quote</button>
-                            <a href="" className="btn btn-danger">
+                            <button onClick={getNewQuote} style={styles} className="btn btn-primary ml-3">New Quote</button>
+                            <a href="" className="btn ml-5" style={styles} >
                                 <i className="fab fa-twitter"></i>
                             </a>
-                            <a href="" className="btn btn-danger">
+                            <a href="" className="btn" style={styles} >
                                 <i className="fab fa-tumblr"></i>
                             </a>
                         </div>
