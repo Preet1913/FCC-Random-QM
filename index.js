@@ -45,12 +45,11 @@ function App(){
         <div className="container pt-5" >
             <div className="jumbotron" style={styles} >
                 <div className="card">
-                    <div className="card-header">Inspirational Quotes</div>
                     <div className="card-body">
                         {randomQuotes ? (
                             <>
+                            <h2 className="card-text"><i class="fas fa-quote-left"></i>{randomQuotes.text}</h2>
                             <h5 className="card-title">- {randomQuotes.author || "No author"}</h5>
-                            <p className="card-text">&quot;{randomQuotes.text}&quot;</p>
                             </>
                         ) : (
                             <h2>Loading...</h2>
