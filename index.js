@@ -53,7 +53,7 @@ function App(){
 
                         <div className="row">
                             <button onClick={getNewQuote} className="btn btn-primary ml-3">New Quote</button>
-                            <a href="" className="btn btn-warning">
+                            <a href="" className="btn btn-danger">
                                 <i className="fab fa-twitter"></i>
                             </a>
                             <a href="" className="btn btn-danger">
